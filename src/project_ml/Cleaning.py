@@ -10,8 +10,9 @@ def clean_data(df_house):
 
 import pandas as pd
 
-def clean_data_iqr(df, k=1.5):
-    columns = [c for c in df.columns if c not in ["Latitude", "Longitude"]]
+def clean_data_iqr(df, k=3, columns=None):
+    if columns is None:
+        columns = [c for c in df.columns if c not in ["Latitude", "Longitude"]]
     df_clean = df.copy()
     for col in columns:
         Q1 = df[col].quantile(0.25)
