@@ -2,7 +2,7 @@
 
 Predicting house prices in California with **Linear Regression** and **Random Forest**, then building **prediction intervals with a guaranteed coverage** using conformal prediction.
 
-> Group project – Aix-Marseille University (2025–2026)
+> Group project – Aix-Marseille University (2026–2027)
 
 ## Objective
 
